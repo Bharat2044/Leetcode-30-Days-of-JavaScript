@@ -33,5 +33,5 @@ node 01_createHelloWorldFunction.js
 #### 3. [To Be Or Not To Be](./03_toBeOrNotToBe.js)
 #### 4. [Counter II](./04_counter2.js)
 
-#### `Basic Array Transformations`
+## `Basic Array Transformations`
 #### 5. [Apply Transform Over Each Element in Array](./05_applyTransformOverEachElementInArray.js)
