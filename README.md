@@ -1,4 +1,4 @@
-# 🧑‍💻 Leetcode - 30 Days of JavaScript 🎯
+# 🧑‍💻 **Leetcode - 30 Days of JavaScript** 🎯
 > ## [30-Days-of-JavaScript](https://leetcode.com/studyplan/30-days-of-javascript/). This repository contains `Solution Codes and Links` of the Question and Solution of the `30 Days of JavaScript`. ❤️
 
 <br/>
