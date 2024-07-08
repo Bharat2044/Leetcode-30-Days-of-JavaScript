@@ -45,6 +45,13 @@ node 01_createHelloWorldFunction.js
 #### [11. Memoize](./11_memoize.js)
 
 ## `Promises and Time`
+#### [12. Add Two Promises](./12_addTwoPromises.js)
+#### [13. Sleep](./13_sleep.js)
+#### [14. Timeout Cancellation](./14_timeoutCancellation.js)
+#### [15. Interval Cancellation](./15_intervalCancellation.js)
+#### [16. Promise Time Limit](./16_promiseTimeLimit.js)
+#### [17. Cache With Time Limit](./17_cacheWithTimeLimit.js)
+#### [18. Debounce](./18_debounce.js)
 
 
 <br />
