@@ -104,3 +104,69 @@ TimeLimitedCache.prototype.count = function () {
  * timeLimitedCache.get(1) // 42
  * timeLimitedCache.count() // 1
  */
+
+
+
+
+
+
+
+
+
+
+# Code:
+```
+var TimeLimitedCache = function () {
+    this.data = {};
+    this.active = 0;
+};
+
+/** 
+ * @param {number} key
+ * @param {number} value
+ * @param {number} duration time until expiration in ms
+ * @return {boolean} if un-expired key already existed
+ */
+TimeLimitedCache.prototype.set = function (key, value, duration) {
+    const prevActive = !!this.data[key]?.isActive;
+    prevActive ? clearTimeout(this.data[key].timeoutId) : this.active++;
+
+    const timeoutId = setTimeout(() => {
+        this.active--;
+        this.data[key].isActive = false;
+    }, duration);
+
+    this.data[key] = {
+        isActive: true,
+        value,
+        timeoutId
+    }
+
+    return prevActive;
+};
+
+/** 
+ * @param {number} key
+ * @return {number} value associated with key
+ */
+TimeLimitedCache.prototype.get = function (key) {
+    return this.data[key]?.isActive ? this.data[key].value : -1;
+};
+
+/** 
+ * @return {number} count of non-expired keys
+ */
+TimeLimitedCache.prototype.count = function () {
+    return this.active;
+};
+
+/**
+ * const timeLimitedCache = new TimeLimitedCache()
+ * timeLimitedCache.set(1, 42, 1000); // false
+ * timeLimitedCache.get(1) // 42
+ * timeLimitedCache.count() // 1
+ */
+```
+
+
+![upvote.jpeg](https://assets.leetcode.com/users/images/5f4cbe15-6cad-4d49-80d4-00608bb91a4a_1720427891.529782.jpeg)
