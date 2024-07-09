@@ -1,5 +1,5 @@
 // Question Link: https://leetcode.com/problems/debounce/?envType=study-plan-v2&envId=30-days-of-javascript
-// Solution Link: 
+// Solution Link: https://leetcode.com/problems/debounce/solutions/5446184/javascript-easy-solution/
 
 /*
 2627. Debounce
@@ -92,40 +92,3 @@ var debounce = function(fn, t) {
  * log('Hello'); // cancelled
  * log('Hello'); // Logged at t=100ms
  */
-
-
-
-
-
-
-
-🎯 Easy JavaScript Solution🔥
-
-# Code:
-```
-/**
- * @param {Function} fn
- * @param {number} t milliseconds
- * @return {Function}
- */
-var debounce = function(fn, t) {
-
-    let timerId = undefined;
-    
-    return function(...args) {
-        
-        clearTimeout(timerId);
-        timerId = setTimeout(fn, t, ...args);
-    }
-};
-
-/**
- * const log = debounce(console.log, 100);
- * log('Hello'); // cancelled
- * log('Hello'); // cancelled
- * log('Hello'); // Logged at t=100ms
- */
-```
-
-
-![upvote.jpeg](https://assets.leetcode.com/users/images/6fde666b-f5a1-40af-80f3-0200b3f24634_1720428311.467689.jpeg)
