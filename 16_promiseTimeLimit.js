@@ -1,5 +1,5 @@
 // Question Link: https://leetcode.com/problems/promise-time-limit/?envType=study-plan-v2&envId=30-days-of-javascript
-// Solution Link:
+// Solution Link: https://leetcode.com/problems/promise-time-limit/solutions/5446161/javascript-easy-solution/
 
 /*
 2637. Promise Time Limit
@@ -98,45 +98,3 @@ var timeLimit = function(fn, t) {
  * const limited = timeLimit((t) => new Promise(res => setTimeout(res, t)), 100);
  * limited(150).catch(console.log) // "Time Limit Exceeded" at t=100ms
  */
-
-
-
-
-
-
-
-
-
-
-
-
-# Code:
-```
-/**
- * @param {Function} fn
- * @param {number} t
- * @return {Function}
- */
- 
-var timeLimit = function(fn, t) {
-    
-    return async function(...args) {
-        const onSuccess = fn(...args);
-
-        const timeoutPromise = new Promise((resolve, reject) => {
-            setTimeout(() => reject("Time Limit Exceeded"), t);
-        });
-
-        return Promise.race([onSuccess, timeoutPromise]);
-    }
-};
-
-/**
- * const limited = timeLimit((t) => new Promise(res => setTimeout(res, t)), 100);
- * limited(150).catch(console.log) // "Time Limit Exceeded" at t=100ms
- */
-```
-
-<br/>
-
-![upvote.jpeg](https://assets.leetcode.com/users/images/0e459001-e8c4-475c-8d9e-5506246a6c2c_1720426630.3373458.jpeg)
