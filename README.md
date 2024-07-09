@@ -52,6 +52,14 @@ node 01_createHelloWorldFunction.js
 #### [16. Promise Time Limit](./16_promiseTimeLimit.js)
 #### [17. Cache With Time Limit](./17_cacheWithTimeLimit.js)
 #### [18. Debounce](./18_debounce.js)
+#### [19. Execute Asynchronous Functions in Parallel](./19_executeAsynchronousFunctionsInParallel.js)
+
+## `JSON`
+#### [20. Is Object Empty](./20_isObjectEmpty.js)
+#### [21. Chunk Array](./21_chunkArray.js)
+#### [22. Array Prototype Last](./22_arrayPrototypeLast.js)
+#### [23. Group By](./23_groupBy.js)
+#### [24. Sort By](./24_sortBy.js)
 
 
 <br />
