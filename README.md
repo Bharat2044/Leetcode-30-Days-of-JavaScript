@@ -26,7 +26,7 @@ node 01_createHelloWorldFunction.js
 ```
 <br/>
 
-## **Question Link with Solution**
+## 🔗 **Question Link with Solution**
 ## `Closures`
 #### [01. Create Hello World Function](./01_createHelloWorldFunction.js)
 #### [02. Counter](./02_counter.js)
