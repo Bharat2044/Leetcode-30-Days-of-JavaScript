@@ -60,6 +60,14 @@ node 01_createHelloWorldFunction.js
 #### [22. Array Prototype Last](./22_arrayPrototypeLast.js)
 #### [23. Group By](./23_groupBy.js)
 #### [24. Sort By](./24_sortBy.js)
+#### [25. Join Two Arrays by ID](.25_joinTwoArraysById.js)
+#### [26. Flatten Deeply Nested Array](./26_flattenDeeplyNestedArray.js)
+#### [26. Compact Object](./27_compactObject.js)
+
+## `Classes`
+#### [28. Event Emitter](./28_eventEmitter.js)
+#### [29. Array Wrapper](./29_arrayWrapper.js)
+#### [30. Calculator with Method Chaining](./30_calculatorWithMethodChaining.js)
 
 
 <br />
